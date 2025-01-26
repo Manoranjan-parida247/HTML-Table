@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Practice</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML table with Rowspan and Colspan</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Employee ID</th>
+            <th rowspan="2">Name</th>
+            <th colspan="3">Performance</th>
+            <th rowspan="2">Salary(INR)</th>
+            <th rowspan="2">Start Date</th>
+            <th rowspan="2">Department</th>
+        </tr>
+        <tr>
+            <th>Rating</th>
+            <th>Bonus(INR)</th>
+            <th>Appraisal(INR)</th>
+        </tr>
+        <tr >
+            <td>001</td>
+            <td >Ravi Kumar</td>
+            <td rowspan="2">Excellent</td>
+            <td rowspan="2">&#8377;3,00,000</td>
+            <td rowspan="2">&#8377;1,00,000</td>
+            <td>8,50,000</td>
+            <td>15-03-2020</td>
+            <td>Marketing</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Priya Sharma</td>
+            <td>&#8377;7,20,000</td>
+            <td>22-07-2018</td>
+            <td>Finance</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Amit Gupta</td>
+            <td>Good</td>
+            <td>&#8377;2,00,000</td>
+            <td>&#8377;50,000</td>
+            <td>&#8377;6,50,000</td>
+            <td>05-11-2021</td>
+            <td rowspan="2">Engineering</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Anjali Verma</td>
+            <td>Average</td>
+            <td>&#8377;1,80,000</td>
+            <td>&#8377;30,000</td>
+            <td rowspan="2">&#8377;7,80,000</td>
+            <td>30-01-2019</td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>Vikram Singh</td>
+            <td>Excellent</td>
+            <td>&#8377;4,00,000</td>
+            <td rowspan="2">&#8377;1,50,000</td>
+            <td>12-04-2022</td>
+            <td rowspan="2">Operations</td>
+        </tr>
+        <tr>
+            <td>006</td>
+            <td>Neha Patel</td>
+            <td>Average</td>
+            <td>&#8377;6,00,000</td>
+            <td>&#8377;9,00,000</td>
+            <td>19-08-2023</td>
+        </tr>
+    </table>
+</body>
+</html>
